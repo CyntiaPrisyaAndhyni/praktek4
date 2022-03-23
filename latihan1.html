@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <title> Button Sembunyi </title>  
+      <script src="jquery-3.6.0.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $(".sembunyi_1").click(function(){$("#foto_1").hide("slow")});
+              $(".tampil_1").click(function(){$("#foto_1").show("slow")});
+
+              $(".sembunyi_2").click(function(){$("#foto_2").hide("slow")});
+              $(".tampil_2").click(function(){$("#foto_2").show("slow")});
+          });
+      </script>
+    </head>
+    <body>
+        <button class="sembunyi_1">Sembunyikan Gambar 1</button>
+        <button class="tampil_1">Tampilkan Gambar 1</button>
+        <br><br>
+        <button class="sembunyi_2">Sembunyikan Gambar 2</button>
+        <button class="tampil_2">Tampilkan Gambar 2</button>
+        <p><img id="foto_1" src="img1.jpg"></p>
+        <p><img id="foto_2" src="logoupnbaru.png"></p>
+    </body>
+</html>

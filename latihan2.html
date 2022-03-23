@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title> Event Double Click </title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $("div").dblclick(function () {
+            $("#kotak1").dblclick(function(){ $("#kotak1").addClass("clr1");})
+
+            $("#kotak2").dblclick(function(){ $("#kotak2").addClass("clr2");})
+
+            $("#kotak3").dblclick(function(){ $("#kotak3").addClass("clr3");})
+
+            $("#kotak4").dblclick(function(){ $("#kotak4").addClass("clr4");})
+        }) 
+        });
+        </script>
+        <style type="text/css">
+        div{
+            width: 80px;
+            height: 80px;
+            background-color: yellow ;
+            border: 3px solid chocolate;
+            padding: 0 20px;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .clr1 { background-color: red;}
+        .clr2 { background-color: greenyellow;}
+        .clr3 { background-color: powderblue;}
+        .clr4 { background-color: rgb(99, 78, 80);}
+        </style>
+        
+    </head>
+    <body>
+        <h3> Klik 2x pada setiap kotak untuk merubah warnanya </h3>
+        <div id="kotak1"></div>
+        <div id="kotak2"></div>
+        <div id="kotak3"></div>
+        <div id="kotak4"></div>
+    </body>
+</html>
